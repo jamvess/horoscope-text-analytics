@@ -1,0 +1,9 @@
+# Heavier packages (about 2 GB): install in week 3, for topic modeling and sentiment
+# Installed 2026-11-14 on Python 3.13. Install torch FIRST, CPU-only build (smaller, no GPU needed):
+#   python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   python -m pip install -r requirements-ml.txt
+torch
+transformers
+sentence-transformers
+bertopic
+sentencepiece   # tokenizer needed by WangchanBERTa (Thai) models

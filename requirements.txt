@@ -1,0 +1,15 @@
+# Core packages: install these in week 1
+requests
+beautifulsoup4
+lxml
+selenium
+pandas
+numpy
+matplotlib
+seaborn
+wordcloud
+pythainlp
+scikit-learn
+gensim
+ipykernel
+nbconvert   # run notebooks from the command line: jupyter nbconvert --execute
