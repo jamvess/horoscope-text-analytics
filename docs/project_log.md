@@ -831,6 +831,23 @@ slide L10 เขียนว่า **Presentation 19/11/2025 (ประมาณ
 
 ---
 
+## ขั้นที่ 16: เอาขึ้น GitHub (2026-11-17)
+
+Repo: **https://github.com/jamvess/horoscope-text-analytics** (public, branch `main`)
+
+- **ทีมตัดสินใจ:** เป็น repo **public** และ**รวม** `docs/lectures` กับ `docs/example_reports` ด้วย
+  (Claude แจ้งไว้ก่อนแล้วว่า example reports มีชื่อและรหัสนักศึกษาของรุ่นพี่ และ lectures เป็นงานของอาจารย์)
+- `.gitignore` ไม่เอา `.venv/`, `__pycache__/`, `.ipynb_checkpoints/` และไฟล์ล็อกของ Office (`~$*`) ขึ้น
+  แต่ละคนต้องสร้าง `.venv` เองตามขั้นตอนใน [README.md](../README.md)
+- **ความเป็นส่วนตัว:** commit ของ repo นี้ใช้อีเมล noreply ของ GitHub (`…+jamvess@users.noreply.github.com`) แทนอีเมลจริง และตรวจแล้วว่าไม่มีรหัสผ่านหรือ token ในไฟล์
+- เพิ่ม `README.md` (วิธีติดตั้งบนเครื่องตัวเอง, โครงสร้างโฟลเดอร์, วิธีทำงานร่วมกัน) และแก้ `CLAUDE.md` จาก "เครื่องเดียว, ไม่ใช้ Git" เป็นทำงานผ่าน GitHub
+- ข้อมูล (`data/`) และ cache (`outputs/*.csv`, `outputs/*.npy`) อยู่ใน repo แล้ว **เพื่อนไม่ต้อง scrape ใหม่ และไม่ต้องรอ 04/05 คำนวณนาน**
+
+**กติกาทำงานร่วมกัน:** `git pull` ก่อนเริ่ม → แก้เฉพาะไฟล์ของตัวเอง → `git add` / `git commit` / `git push`
+ไฟล์ `.ipynb`, `.pptx` และ `.docx` merge กันไม่ได้ ห้ามสองคนแก้ไฟล์เดียวกันพร้อมกัน
+
+---
+
 ## วิธีรันซ้ำ (ทุกคำสั่งรันจากโฟลเดอร์โปรเจกต์)
 
 ```bash
